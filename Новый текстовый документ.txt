@@ -1,0 +1,188 @@
+// task 1
+static void Main(string[] args)
+{
+    Func();
+    Console.Read();
+}
+
+static void Func()
+{
+    string str = "20 ";
+    for (int i = 1; i <= 10; i++)
+    { 
+        Console.Write(str);
+    }
+}
+
+// task 2
+static void Main(string[] args)
+{
+    Func();
+    Console.Read();
+}
+
+static void Func()
+{
+    double price = 20.4;
+    for (int i = 1; i <= 20; i++)
+    { 
+        Console.WriteLine($"Цена {i} товара: {price * i}");
+    }
+}
+
+// task 3
+static void Main(string[] args)
+{
+    Func();
+    Console.Read();
+}
+
+static void Func()
+{
+    int k = 0;
+    for (int i = 10; i < 100; i++)
+    {
+        if (i % 2 == 0)
+        {
+            Console.WriteLine(i);
+            k++;
+        }
+        
+    }
+    Console.WriteLine($"Кол-во целых двухзнычных чисел: {k}");
+}
+
+// task 4
+static void Main(string[] args)
+{
+    Func();
+    Console.Read();
+}
+
+static void Func()
+{
+    Random rnd = new Random();
+    for (int i = 0; i < 10; i++)
+    {
+        int k = rnd.Next(-40, 40);
+        Console.WriteLine($"{i}-е число - {k}");
+    }
+}
+
+// task 5
+static void Main(string[] args)
+{
+    Func();
+    Console.Read();
+}
+
+static void Func()
+{
+    Random rnd = new Random();
+    int num2 = 0;
+    for (int i = 0; i < 15; i++)
+    {
+        int number = rnd.Next(-20, 30);
+        number >= 0 ? num2++;
+        Console.WriteLine(number);
+    }
+    Console.WriteLine($"Кол-во положительных чисел: {num2}");
+}
+
+// task 6
+static void Main(string[] args)
+{
+    Func();
+    Console.Read();
+}
+
+static void Func()
+{
+    Random rnd = new Random();
+    string str1 = "положительное";
+    string str2 = "отрицательное";
+    for (int i = 0; i < 12; i++)
+    {
+        int number = rnd.Next(-50, 50);
+        if (number > 0)
+        {
+            Console.WriteLine($"{number} - {str1}");
+        }
+        else 
+        {
+            Console.WriteLine($"{number} - {str2}");
+        } 
+    }
+}
+
+// task 7
+static void Main(string[] args)
+{
+    Func();
+    Console.Read();
+}
+
+static void Func()
+{
+    Random rnd = new Random();
+    string str1 = "положительное";
+    string str2 = "отрицательное";
+    for (int i = 0; i < 12; i++)
+    {
+        int number = rnd.Next(-30, 30);
+        if (number > 0)
+        {
+            Console.Write($"{number} - {str1}");
+            if (number % 2 == 0)
+            {
+                Console.WriteLine(", четное");
+            }
+            else
+            {
+                Console.WriteLine(", нечетное");
+            }
+        }
+        else 
+        {
+            Console.Write($"{number} - {str2}");
+            if (number % 2 == 0)
+            {
+                Console.WriteLine(", четное");
+            }
+            else
+            {
+                Console.WriteLine(", нечетное");
+            }
+        } 
+    }
+}
+
+// task 8
+static void Main(string[] args)
+{
+    Func();
+    Console.Read();
+}
+
+static void Func()
+{
+    Random rnd = new Random();
+    string str1 = "положительное";
+    string str2 = "отрицательное";
+    for (int i = 0; i < 12; i++)
+    {
+        int number = rnd.Next(-20, 20);
+        if (number > 0)
+        {
+            Console.Write(number);
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("- четное");
+            }
+            else
+            {
+                Console.WriteLine("- нечетное");
+            }
+        }
+    }
+}
